@@ -4,37 +4,69 @@
 }
 
 body{
-     background-color: skyblue;
+     background-color: rgb(247, 149, 247);
      line-height: 1.7;
     }
 
     h1{
-        margin-bottom: 15px;
-        margin-top: 15px;
-        margin-left: 15px;
-        font-family: sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-stretch: narrower;
+        font-size: 40px;
+        padding-top: 20px;
+        color: purple;
+        
     }
 
     h2{
         text-align: center;
         margin-bottom: 15px;
+        font-size: 30px;
+    
     }
 
- li{
-    text-align: center;
-    font-size: 20px;
-   
-  
 
- }
   a{
     text-decoration: none;
-    color: red;
+    color: rgb(247, 75, 56);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
   }
-    img{
-        border-radius: 50%;
-        margin-left: 15px;
-    }
+
+
+  
+  .image-row {
+    display: flex;
+    justify-content: space-evenly; /* This ensures equal spacing */
+    gap: 10px; /* Optional: Adds space between images */
+  }
+
+  .image-container {
+    text-align: center;
+
+  }
+
+  .image-container img {
+   /* Adjust based on how you want the images to fit */
+    height: auto;
+    max-width: 300px; /* Set a max width to control the image size */
+    cursor: pointer;
+    border: 5px purple solid;
+  }
+
+  .caption {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #333; /* Caption text color */
+  }
+
+  .image-container img:hover {
+    border-radius: 50%; /* Turns image into a circle */
+    transform: scale(1.1); /* Optional: Slight zoom effect on hover */
+  }
+
+  .images{
+    border-radius: 15px;
+    border: 5px solid purple;
+  }
 
     
