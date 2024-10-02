@@ -36,8 +36,8 @@ body{
   
   .image-row {
     display: flex;
-    justify-content: space-evenly; /* This ensures equal spacing */
-    gap: 10px; /* Optional: Adds space between images */
+    justify-content: space-evenly; 
+    gap: 10px; 
   }
 
   .image-container {
@@ -46,9 +46,9 @@ body{
   }
 
   .image-container img {
-   /* Adjust based on how you want the images to fit */
+   
     height: auto;
-    max-width: 300px; /* Set a max width to control the image size */
+    max-width: 300px; 
     cursor: pointer;
     border: 5px purple solid;
   }
@@ -56,15 +56,19 @@ body{
   .caption {
     margin-top: 8px;
     font-size: 16px;
-    color: #333; /* Caption text color */
+    color: #333; 
   }
 
   .image-container img:hover {
-    border-radius: 50%; /* Turns image into a circle */
-    transform: scale(1.1); /* Optional: Slight zoom effect on hover */
+    border-radius: 50%; 
+    transform: scale(1.1);
   }
 
   .images{
+    border-radius: 15px;
+    border: 5px solid purple;
+  }
+      
     border-radius: 15px;
     border: 5px solid purple;
   }
