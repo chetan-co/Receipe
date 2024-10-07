@@ -45,6 +45,19 @@ body{
     
     }
 
+      .label{
+      margin-left: 20px;
+      margin-top: 20px;
+      color: #800080;
+      font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    .label span{
+      color: #ffffff;
+      font-style: italic;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
 
   a{
     text-decoration: none;
