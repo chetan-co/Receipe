@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vada Pav Recipe</title>
+    <style>
+        *{
+            background-color: rgb(117, 225, 117)
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            color: rgb(1, 128, 1);
+        }
+        h3{
+            font-size: 30px;
+        }
+
+        h1,  h3, p, li, h2{
+            margin-left: 40px;
+        }
+
+        img:hover {
+        border-radius: 50%;
+        transform: scale(1.1);
+    }
+
+    img {
+        border: 5px solid green;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    ::-webkit-scrollbar {
+  width: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(117, 225, 117); 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: green; 
+  border-radius: 6px; 
+  border: 2px solid #ffffff; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: green;
+}
+    
+
+    h1, h2, h3, li, p {
+   margin-left: 40px;
+    }
+    h3 {
+        color: black;
+        font-size: 30px;
+    }
+
+    h2 {
+        color: blue;
+        font-size: 20px;
+    }
+
+    .in {
+        color: green;
+    }
+
+    li {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+  
+    </style>
 </head>
 <body>
-    <h1>Learn How to Make Vad Pav
+    <h1>Learn How to Make Vad Pav</h1>
         <br><br>
     <img src="../images/vada pav.jpeg" alt="burger">
     <h3>Description</h3>
@@ -35,6 +109,24 @@
     <h3>Step 6.</h3>
     <p>further, pinch a small ball sized momos dough and flatten.</p>
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      
+
+    <script>
+     
+      gsap.from("h1", {
+        y: -500,
+          opacity: 0,
+          duration: 1,
+          
+      });
+
+      gsap.from('img',{
+        x: -500,
+        opacity: 0,
+        duration: 1,
+
+      });
+</script>
 </body>
 </html>
