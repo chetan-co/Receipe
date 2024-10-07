@@ -6,14 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger Recipe</title>
 </head>
+<style>
+    * {
+        background-color: rgb(254, 155, 171);
+    }
+
+    h3 {
+        color: black;
+        font-size: 30px;
+    }
+
+    h2 {
+        color: blue;
+        font-size: 20px;
+    }
+
+    .in {
+        color: green;
+    }
+
+    li {
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    h1 {
+        color: rgb(243, 14, 52);
+
+
+    }
+
+    img:hover {
+        border-radius: 50%;
+        transform: scale(1.1);
+    }
+
+    img {
+        border: 5px solid rgb(241, 27, 63);
+        cursor: pointer;
+    }
+    
+
+    h1, h2, h3, li, p {
+   margin-left: 40px;
+    }
+
+    ::-webkit-scrollbar {
+  width: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgb(235, 117, 117); 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red; 
+  border-radius: 6px; 
+  border: 2px solid #ffffff; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+</style>
+
 
 <body>
-    <h1>Learn How to Make Burger</h1>
-    <img src="../images/burger.jpg" alt="burger">
+    <center>
+        <h1>Learn How to Make Burger</h1>
+        <br>
+        <img src="../images/burger.jpg" alt="burger">
+    </center>
+    <br><br><br>
     <h3>Description</h3>
     <p>This burger patty recipe uses ground beef and an easy bread crumb mixture.</p>
 
-    <h2>Ingredients</h2>
+    <h2 class="in">Ingredients</h2>
     <ol>
         <li>Bun</li>
         <li>Cucumbers</li>
@@ -36,8 +107,26 @@
         instant-read thermometer inserted into the center should read<br> at least 160 degrees F (70 degrees C).</p>
     <h3>Step 6.</h3>
     <p>Serve hot and enjoy!</p>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      
 
+    <script>
+     
+      gsap.from("h1", {
+        y: -500,
+          opacity: 0,
+          duration: 1,
+          
+      });
 
+      gsap.from('img',{
+        x: 500,
+        opacity: 0,
+        duration: 1,
+
+      });
+</script>
 </body>
 
 </html>
